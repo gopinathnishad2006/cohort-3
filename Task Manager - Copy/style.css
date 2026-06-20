@@ -1,0 +1,328 @@
+/* =====================
+   ROOT VARIABLES
+===================== */
+
+:root {
+    --bg: #f8fafc;
+    --surface: #ffffff;
+
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+
+    --success: #22c55e;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+
+    --text: #1e293b;
+    --text-light: #64748b;
+
+    --border: #e2e8f0;
+}
+
+/* =====================
+   RESET
+===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* =====================
+   MAIN
+===================== */
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+
+nav {
+    background: var(--primary);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 35px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav h1,
+nav h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav i {
+    font-size: 24px;
+}
+
+/* =====================
+   TASK INPUT
+===================== */
+
+.taskinput {
+    margin-top: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+form {
+    display: flex;
+    gap: 20px;
+}
+
+input,
+select {
+    flex: 1;
+
+    padding: 12px 15px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--primary);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+
+button {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: var(--primary);
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--primary-hover);
+}
+
+/* =====================
+   SEARCH
+===================== */
+
+.search {
+    margin-top: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.search input {
+    width: 40%;
+}
+
+.searchbtn {
+    display: flex;
+    gap: 10px;
+}
+
+/* =====================
+   TASK LIST
+===================== */
+
+.tasks {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task {
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.task:hover {
+    transform: translateY(-3px);
+}
+
+.task-info h2 {
+    margin-bottom: 8px;
+}
+
+/* =====================
+   BADGES
+===================== */
+
+.badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.Study {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.Work {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.Personal {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+/* =====================
+   ACTION BUTTONS
+===================== */
+
+.btn {
+    display: flex;
+    gap: 10px;
+}
+
+#editbtn {
+    background: var(--warning);
+}
+
+#editbtn:hover {
+    background: #d97706;
+}
+
+#completebtn {
+    background: var(--success);
+}
+
+#completebtn:hover {
+    background: #16a34a;
+}
+
+#deletebtn {
+    background: var(--danger);
+}
+
+#deletebtn:hover {
+    background: #dc2626;
+}
+.dark {
+    --bg: #0f172a;
+    --surface: #1e293b;
+
+    --text: #f8fafc;
+    --text-light: #cbd5e1;
+
+    --border: #334155;
+
+    --primary: #111827;
+    --primary-hover: #1f2937;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .searchbtn {
+        flex-wrap: wrap;
+    }
+
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

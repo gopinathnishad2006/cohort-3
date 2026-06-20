@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <h1>
+          <i class="ri-menu-2-line"></i>
+          Task Manager
+        </h1>
+
+        <h3 id="darkMode">
+          Dark Mode
+          <i class="ri-moon-fill"></i>
+        </h3>
+      </nav>
+
+      <!-- Task Input -->
+
+      <section class="taskinput">
+        <form>
+          <input id="inputtask" type="text" placeholder="Enter your task" />
+
+          <select id="category" >
+            <option selected disabled>Select Category</option>
+
+            <option value="Work">Work</option>
+            <option value="Study">Study</option>
+            <option value="Personal">Personal</option>
+          </select>
+
+          <button id="addtask" type="submit">Add Task</button>
+        </form>
+      </section>
+
+      <!-- Search -->
+
+      <section class="search">
+        <input type="search" id="search" placeholder="Search task..." />
+
+        <div class="searchbtn">
+          <button class="all">All</button>
+          <button class="work">Work</button>
+          <button class="study">Study</button>
+          <button class="personal">Personal</button>
+        </div>
+      </section>
+
+      <!-- Tasks -->
+
+      <section class="tasks">
+        <!-- <div class="task"> -->
+          <!-- <div class="task-info">
+            <h2>Learn JavaScript DOM</h2>
+            <span class="badge study"> Study </span>
+          </div>
+
+          <div class="btn">
+            <button id="editbtn">Edit</button>
+
+            <button id="completebtn">Complete</button>
+
+            <button id="deletebtn">Delete</button>
+          </div>
+        </div> -->
+
+        <!-- <div class="task">
+          <div class="task-info">
+            <h2>Complete Assignment</h2>
+            <span class="badge work"> Work </span>
+          </div>
+
+          <div class="btn">
+            <button id="editbtn">Edit</button>
+
+            <button id="completebtn">Complete</button>
+
+            <button id="deletebtn">Delete</button>
+          </div>
+        </div> -->
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
