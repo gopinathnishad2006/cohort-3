@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+ height: 100%;
+ width: 100%;
+}
+.parent{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+.child1{
+    background-color: rgb(250, 195, 57);
+    height: 95%;
+    width: 65%;
+    position: absolute;
+}
+.child2{
+    background-color:beige;
+    height: 95%;
+    width: 35%;
+    position: absolute;
+    left: 64%;
+}
+img{
+    position: absolute;
+    left:65%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    top: 40%;
+}
