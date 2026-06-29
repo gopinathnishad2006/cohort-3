@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+aside{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color:white;
+    border-radius: 1px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid grey;
+}
+.blackbtn{
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px ;
+    border-radius: 8px;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.sidecenter{
+    display: flex;
+    flex-direction: column;
+}
+
+.bluebtn{
+    display: flex;
+    border: none;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px ;
+    background-color: white;
+    border-radius: 8px;
+    gap: 8px;
+    align-items: center;
+
+}
+.bluebtn:hover{
+    background-color: rgb(167, 185, 241);
+    color: rgb(10, 83, 201);
+}
+.sidetop h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.sidetop p{
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.right{
+    background-color: white;
+    height: 100vh;
+    width: 80%;
+    margin-left: 20%;
+}
+nav{
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 30px;
+}
+nav button{
+    background-color: white;
+    padding: 8px 15px;
+    color: black;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 13px;
+    font-weight: 600;
+}
+.upperheading h1{
+font-weight: 500;
+}
+
+.upperheading p{
+    opacity: 0.7;
+}
+.rightmain{
+    height: 120vh;
+    padding: 20px 30px;
+    background-color: whitesmoke;
+    border-top: 1px solid grey;
+}
+.boxes{
+    height: 150px;
+    width: 25%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:15px;
+    background-color: white;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 25px;
+}
+.box i{
+    font-size: 20px;
+}
+.boxicon{
+    height: 40px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+.boxicon1{
+    background-color:rgb(190, 203, 243);
+    color: rgb(10, 10, 140);
+}
+.boxicon2{
+    background-color:rgb(184, 233, 184);
+    color: rgb(8, 82, 8);
+}
+.boxicon3{
+    background-color:rgb(227, 172, 172);
+    color: rgb(90, 7, 7);
+}
+.boxicon4{
+    background-color:rgb(167, 185, 241);
+    color: rgb(10, 10, 140);
+}
+.boxes h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+.boxes p{
+    opacity: 0.7;
+}
+.graphbox{
+    background-color: white;
+    height: 350px;
+    width: 70%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.dmbox{
+    background-color: white;
+    height: 170px;
+    width: 35%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+.rightcenter{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+.transaction{
+    width: 65%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: auto;
+    background-color: white;
+    margin-top: 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btntrans{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 25px;
+}
+.search input{
+    padding: 10px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 9px;
+    flex: 1;
+
+}
+.search i{
+    padding: 10px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 9px;
+}
+.search{
+    flex: 1;
+    display: flex;
+    
+}
+.btntrans select{
+    padding: 10px 15px;
+    border: 1px solid grey;
+    border-radius: 9px;
+    background-color: whitesmoke;
+    flex: 1;
+}
+
+.addtransaction{
+    height: 75%;
+    width: 32%;
+    background-color: white;
+    position: fixed;
+    border-radius: 10px;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+    padding: 20px 20px;
+    box-shadow:0 8px 30px rgba(0, 0, 0, 0.7);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input{
+    padding: 10px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+form select{
+    padding: 10px 15px;
+    border: 1px solid grey;
+    border-radius: 9px;
+    background-color: whitesmoke;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.amtdate{
+    display: flex;
+    gap: 15px;
+}
+.amount{
+    display: flex;
+    flex: 1;
+}
+.date{
+    display: flex;
+    flex: 1;
+}
+form button{
+    margin-top: 20px;
+}
+form h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.formtext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.formtext i{
+    opacity: 0.7;
+    font-size: 25px;
+}
+form h4{
+    font-weight: 600;
+}
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 998;
+}
+.transhead{
+    display: flex;
+    justify-content: space-between; 
+    border-bottom: 1px solid grey;   
+    padding-bottom: 10px;
+}
+.transhead h4{
+    opacity: 0.7;
+
+}
+.alltransactions{
+    display: flex;
+    justify-content: space-between; 
+    border-bottom: 1px solid grey;   
+    padding-bottom: 10px;
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="addtransaction">
+      <form>
+        <div class="formtext">
+          <h2>Add Transaction</h2>
+          <i class="ri-close-line closeform"></i>
+        </div>
+        <div class="type form">
+          <h4>Type</h4>
+          <select name="select" required id="selecttrans">
+               <option value="Income">Income Only</option>
+               <option value="Expense">Expense Only</option>
+              </select>
+        </div>
+        <div class="desc form">
+          <h4>Description</h4>
+          <input type="text" id="desctrans" placeholder="e.g. Salary,coffee">
+        </div>
+        <div class="amtdate">
+          <div class="amount form">
+          <h4>Amount</h4>
+          <input type="number" id="amttrans" required placeholder="0000">
+        </div>
+        <div class="date form">
+          <h4>Date</h4>
+          <input type="date" id="datetrans" required>
+        </div>
+        </div>
+        <div class="category form">
+          <h4>Category</h4>
+          <select name="" id="categorytrans" required>
+               <option value="Food">Food</option>
+               <option val ue="Shopping">Shopping</option>
+               <option value="Transportation">Transportation</option>
+               <option value="Salary">Salary</option>
+               <option value="Recharge">Recharge & Bills</option>
+               <option value="Others">Others</option>
+              </select>
+        </div>
+        <button type="submit" class="blackbtn savetransaction">Save Transaction</button>
+      </form>
+    </div>
+    <main>
+      <aside>
+        <div class="side">
+          <div class="sidetop">
+            <h2>Fintrack Pro</h2>
+            <p>Enterprise Finance</p>
+          </div>
+          <div class="sidecenter">
+            <button class="bluebtn">
+              <i class="ri-dashboard-horizontal-line"></i>Dashboard
+            </button>
+            <button class="bluebtn">
+              <i class="ri-settings-3-fill"></i>Setting
+            </button>
+          </div>
+        </div>
+        <button class="blackbtn addtransactionbtn">+ Add Transcation</button>
+      </aside>
+      <div class="right">
+        <nav>
+          <button><i class="ri-logout-box-r-line"></i>Log Out</button>
+        </nav>
+        <div class="rightmain">
+          <div class="upperheading">
+            <h1>Financial Overview</h1>
+            <p>Real-Time tracking Application</p>
+          </div>
+          <div class="box">
+            <div class="box1 boxes">
+              <div class="boxicon boxicon1"><i class="ri-bank-fill"></i></div>
+              <p>Current Balance</p>
+              <h1>$0.00</h1>
+            </div>
+            <div class="box2 boxes">
+              <div class="boxicon boxicon2"><i class="ri-line-chart-line"></i></div>
+              <p>Total Income</p>
+              <h1>$0.00</h1>
+            </div>
+            <div class="box3 boxes">
+              <div class="boxicon boxicon3"><i class="ri-funds-box-line"></i></div>
+              <p>Total Expense</p>
+              <h1>$0.00</h1>
+            </div>
+            <div class="box4 boxes">
+              <div class="boxicon boxicon4"><i class="ri-wallet-3-line"></i></div>
+              <p>Total Transcation</p>
+              <h1>0</h1>
+            </div>
+            
+          </div>
+          <div class="rightcenter">
+            <div class="graphbox"></div>
+            <div class="dmbox"></div>
+          </div>
+          <div class="transaction">
+            <h2>All Transcation</h2>
+            <div class="btntrans">
+              <div class="search">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Search Transactions">
+              </div>
+              <select name="select" id="">
+               <option value="alltype">All Type</option>
+               <option value="income">Income Only</option>
+               <option value="expense">Expense Only</option>
+              </select>
+            </div>
+            <div class="transhead">
+              <h4>DATE</h4>
+              <h4>DESCRIPTION</h4>
+              <h4>CATEGORY</h4>
+              <h4>AMOUNT</h4>
+              <h4>ACTIONS</h4>
+            </div>
+            <div class="alltransactions"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
