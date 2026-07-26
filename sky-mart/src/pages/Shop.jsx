@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Search, ChevronDown } from "lucide-react";
 import axios from "axios";
 import { useEffect } from "react";
-import { MyStore } from "../Context/MyContext";
+import { MyStore } from "../context/MyContext";
 import ProductCard from "../components/ProductCard";
 
 const Shop = () => {
