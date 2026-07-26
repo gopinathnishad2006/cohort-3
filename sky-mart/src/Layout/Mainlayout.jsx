@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Cart from '../components/Cart'
 import { Outlet } from 'react-router'
-import { MyStore } from '../Context/MyContext'
+import { MyStore } from '../context/MyContext'
 
 const Mainlayout = () => {
   const { isCartOpen, setIsCartOpen } = useContext(MyStore)
