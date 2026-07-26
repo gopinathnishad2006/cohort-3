@@ -1,6 +1,6 @@
 import { ArrowRight, Package, TrendingUp, Star, Tag, Zap, Shield } from "lucide-react";
 import { useContext } from "react";
-import { MyStore } from "../Context/MyContext";
+import { MyStore } from "../context/MyContext";
 import { Auth } from "../context/Auth";
 import { useNavigate } from "react-router";
 

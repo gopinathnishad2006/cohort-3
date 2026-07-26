@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink, useNavigate } from "react-router";
-import { MyStore } from "../Context/MyContext";
+import { MyStore } from "../context/MyContext";
 import { Auth } from "../context/Auth";
 
 const Navbar = () => {

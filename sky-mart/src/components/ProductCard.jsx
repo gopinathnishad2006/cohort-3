@@ -1,7 +1,7 @@
 import { ShoppingCart, Check, Star } from "lucide-react";
 import { useContext } from "react";
 import { useNavigate } from "react-router";
-import { MyStore } from "../Context/MyContext";
+import { MyStore } from "../context/MyContext";
 
 const ProductCard = ({ product }) => {
   let {setCartItems,cartItems,addToCart,setIsCartOpen}=useContext(MyStore)

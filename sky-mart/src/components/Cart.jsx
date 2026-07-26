@@ -1,6 +1,6 @@
 import { ShoppingBag, X, Plus, Minus, Trash2, ArrowRight } from "lucide-react";
 import { useContext } from "react";
-import { MyStore } from "../Context/MyContext";
+import { MyStore } from "../context/MyContext";
 
 export default function Cart() {
   let { cartItems, setCartItems,totalPrice,setIsCartOpen } = useContext(MyStore);
